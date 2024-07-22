@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Test-page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="demo">
+            <div class="container">
+                <div class="demo__inner">
+                    <div class="demo__content">
+                        <div class="demo__content-inner">
+                            <h3 class="demo__title">
+                                Демо-версия
+                            </h3>
+                            <p class="demo__text">
+                                За 18 лет деятельности было реализовано более 500 крупных, а так же, не менее 2500
+                                средних и
+                                малых проектов. Используя знания и накопленный опыт мы можем предложить
+                            </p>
+                            <button class="demo__btn" onclick="document.getElementById('form1').style.display='block'">
+                                <span class="btn__text">Попробовать бесплатно</span>
+                                <img class="demo__arrow" src="images/demo-arrow.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="demo__img"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Создаем форму ввода -->
+        <div class="modal" id="form1">
+            <form class="form animate" action="" method="post">
+                <div class="form__container" class="modal">
+                    <div class="form__close">
+                        <span class="close" title="Close"
+                            onclick="document.getElementById('form1').style.display='none'">&times;</span>
+                    </div>
+                    <div class="form__inner">
+                        <h3 class="form__title">Войти в систему</h3>
+                        <div class="form__group">
+                            <input class="form__input" type="text" name="email/phone" placeholder="Email/Телефон">
+                        </div>
+                        <div class="form__group">
+                            <input class="form__input" type="password" name="password" minlength="6"
+                                placeholder="Пароль">
+                        </div>
+                        <label>
+                            <input class="form__checkbox" type="checkbox" checked="checked" name="remember">
+                            Запомнить
+                            пароль
+                        </label>
+                        <div class="form__group-link">
+                            <a class="form__link" href="">Восстановить</a>
+                        </div>
+                        <div class="form__group">
+                            <button class="form__btn enter">Войти</button>
+                        </div>
+                        <div class="form__group">
+                            <button class="form__btn registration">Зарегестрироваться</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+        <script>
+            // Получить модальное окно
+            let modal = document.getElementById('form1');
+
+            // когда пользователь кликнет за пределы формы, форма закроется
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+    </body>
+
+</html>
