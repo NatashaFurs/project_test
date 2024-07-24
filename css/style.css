@@ -139,32 +139,6 @@ body {
     padding: 36px 40px;
 }
 
-/* Добавляем анимацию */
-.animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-    from {
-        -webkit-transform: scale(0)
-    }
-
-    to {
-        -webkit-transform: scale(1)
-    }
-}
-
-@keyframes animatezoom {
-    from {
-        transform: scale(0)
-    }
-
-    to {
-        transform: scale(1)
-    }
-}
-
 .form__container {
     flex-basis: 500px;
     height: auto;
@@ -278,6 +252,32 @@ body {
     color: rgba(255, 255, 255, 1);
     background: rgba(36, 76, 152, 1);
     cursor: pointer;
+}
+
+/* Добавляем анимацию */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
 }
 
 
